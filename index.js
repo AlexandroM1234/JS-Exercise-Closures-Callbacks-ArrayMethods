@@ -186,9 +186,14 @@ function processDuplicateFree(/* CODE HERE ONLY AFTER COMPLETING ALL OTHER TASKS
  * The full names appear in the array in the same order the runners appear in the `runners` array.
 */
 function getFullNames(runners){
+
+  let formatedArray=[];
+
   runners.forEach(function(element){
-    return console.log(`${element.last_name},${element.first_name}`);
-  });
+    formatedArray.push(`${element.last_name}, ${element.first_name}`)
+  })
+
+  return formatedArray;
 }
 
 /**
